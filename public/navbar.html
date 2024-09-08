@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <h1>NavBar Sample using bootstrap.</h1>
+
+    <div class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <span class="navbar-brand"> Shopper. </span>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#divmenu1"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="navbar-collapse collapse" id="divmenu1">
+          <div class="navbar-nav me-auto mb-2">
+            <span class="nav-item text-white me-5"><a>Home</a></span>
+            <span class="nav-item text-white me-5"><a>Shop</a></span>
+            <span class="nav-item text-white me-5"><a>Contact</a></span>
+            <span class="nav-item text-white me-5"><a>Books</a></span>
+            <span class="nav-item input-group w-100">
+              <input type="text" class="form-control" placeholder="searchbar" />
+              <button class="bi bi-search btn btn-warning"></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-expand-lg">
+      <!--Navbar started-->
+      <div class="container-fluid">
+        <!--Responsive ui-->
+        <span class="navbar-brand">
+          <!--Company name-->
+          Shopper
+        </span>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#menu"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="navbar-collapse collapse" id="menu">
+          <ul class="navbar-nav me-auto mb-1">
+            <li class="nav-item text-white"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Shop</a></li>
+            <li class="nav-item"><a href="#">Pages</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
